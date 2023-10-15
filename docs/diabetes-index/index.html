@@ -1,0 +1,307 @@
+<!--
+TODO
+	add scroll-to-top
+	add amp-state to template
+-->
+<!doctype html>
+<html amp>
+<head>
+<meta charset="utf-8">
+<link rel="canonical"           href="https://ontomatica.io/canonical.html"/>
+<link rel="icon"                href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+<title>
+table-of-contents: iframe PDFs diabetes
+</title>
+<meta name="description" content="Diabetes">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf" />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/recursive/recursive-2019_11_22-20_38.woff2" />
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+@font-face {
+	font-family: Recursive;
+	src:
+		url('https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf')                 format('truetype'),
+		url('https://s3.amazonaws.com/benetta.net/fonts/recursive/recursive-2019_11_22-20_38.woff2') format('woff2-variations');
+	font-display: swap;
+	text-align: initial;
+	font-weight: 100 600;
+	font-stretch: 25% 151%;
+}
+
+@font-face{font-family:system;font-style:normal;font-weight:300;src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI 	Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma")}@font-face{font-family:system;font-style:italic;font-weight:300;src:local(".SFNSText-LightItalic"),local(".HelveticaNeueDeskInterface-Italic"),local(".LucidaGrandeUI"),local("Ubuntu Light Italic"),local("Segoe UI Light Italic"),local("Roboto-LightItalic"),local("DroidSans"),local("Tahoma")}@font-face{font-family:system;font-style:normal;font-weight:400;src:local(".SFNSText-Regular"),local(".HelveticaNeueDeskInterface-Regular"),local(".LucidaGrandeUI"),local("Ubuntu"),local("Segoe UI"),local("Roboto-Regular"),local("DroidSans"),local("Tahoma")}@font-face{font-family:system;font-style:italic;font-weight:400;src:local(".SFNSText-Italic"),local(".HelveticaNeueDeskInterface-Italic"),local(".LucidaGrandeUI"),local("Ubuntu Italic"),local("Segoe UI Italic"),local("Roboto-Italic"),local("DroidSans"),local("Tahoma")}@font-face{font-family:system;font-style:normal;font-weight:500;src:local(".SFNSText-Medium"),local(".HelveticaNeueDeskInterface-MediumP4"),local(".LucidaGrandeUI"),local("Ubuntu Medium"),local("Segoe UI Semibold"),local("Roboto-Medium"),local("DroidSans-Bold"),local("Tahoma Bold")}@font-face{font-family:system;font-style:italic;font-weight:500;src:local(".SFNSText-MediumItalic"),local(".HelveticaNeueDeskInterface-MediumItalicP4"),local(".LucidaGrandeUI"),local("Ubuntu Medium Italic"),local("Segoe UI Semibold Italic"),local("Roboto-MediumItalic"),local("DroidSans-Bold"),local("Tahoma Bold")}@font-face{font-family:system;font-style:normal;font-weight:700;src:local(".SFNSText-Bold"),local(".HelveticaNeueDeskInterface-Bold"),local(".LucidaGrandeUI"),local("Ubuntu Bold"),local("Roboto-Bold"),local("DroidSans-Bold"),local("Segoe UI Bold"),local("Tahoma Bold")}@font-face{font-family:system;font-style:italic;font-weight:700;src:local(".SFNSText-BoldItalic"),local(".HelveticaNeueDeskInterface-BoldItalic"),local(".LucidaGrandeUI"),local("Ubuntu Bold Italic"),local("Roboto-BoldItalic"),local("DroidSans-Bold"),local("Segoe UI Bold Italic"),local("Tahoma Bold")}
+
+html{font-size:1.0em;}
+
+*{box-sizing:border-box}
+:focus{outline:0}
+
+section{font-family:Recursive,sans-serif;margin-left:1em;}
+
+.text-center{text-align:center}
+.margin-0{margin:0}
+.margin-top-0{margin-top:0;padding-left:10px}
+.margin-bottom-0{margin-bottom:10px}
+.minus-margin-top-bottom-15{margin-top:-15px;margin-bottom:-15px}
+.space{height:10px}
+.space-2{height:20px}
+.space-3{height:30px}
+small{font-size:1em;line-height:1}
+strong{font-weight:500}
+a{color:#005af0}
+.dark-color{color:#333030}
+
+body{text-align:left}
+body[dir=rtl]{text-align:right}
+.text-center{text-align:center}
+code{padding:.2em .4em;font-size:90%;color:#bd4147;background-color:#f7f7f9;border-radius:.25em}
+
+[class*=col-]{margin-bottom:30px}
+.container-fluid{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+.row{margin-right:-15px;margin-left:-15px}
+.row:after,.row:before{display:table;content:" "}
+.row:after{clear:both}
+.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{position:relative;min-height:1px;padding-right:15px;padding-left:15px}
+.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{float:left}
+.col-xs-12{width:100%}
+.col-xs-11{width:91.66666667%}
+.col-xs-10{width:83.33333333%}
+.col-xs-9{width:75%}
+.col-xs-8{width:66.66666667%}
+.col-xs-7{width:58.33333333%}
+.col-xs-6{width:50%}
+.col-xs-5{width:41.66666667%}
+.col-xs-4{width:33.33333333%}
+.col-xs-3{width:25%}
+.col-xs-2{width:16.66666667%}
+.col-xs-1{width:8.33333333%}
+.bordered-title{border-bottom:1px solid rgba(0,0,0,.12);margin:0 -15px;padding:0 15px 8px}
+.bordered-title h3{margin:0;line-height:1.4}
+.bordered-title h5{opacity:.54;margin:0}
+
+table{border-spacing:0;border-collapse:collapse;width:100%;max-width:100%;margin-bottom:1em;background-color:transparent}
+td,th{padding:0}
+th{text-align:left}
+table td,table th{padding:.75em;line-height:1.5;vertical-align:top;border-top:1px solid #eceeef}
+table thead th{vertical-align:bottom;border-bottom:2px solid #eceeef}
+.table-inverse{color:#eceeef;background-color:#373a3c}
+.table-inverse td,.table-inverse th,.table-inverse thead th{border-right:#55595c}
+.table-inverse td,.table-inverse th,.table-inverse thead th{border-color:#55595c}
+.thead-inverse th{color:#fff;background-color:#373a3c}
+.thead-default th{color:#55595c;background-color:#eceeef}
+.table-responsive{display:block;width:100%;min-height:.01%;overflow-x:auto}
+.table-striped tbody tr:nth-of-type(odd){background-color:#f9f9f9}
+.table-bordered td,.table-bordered th{border:1px solid #eceeef}
+.table-hover tbody tr:hover{background-color:#f5f5f5}
+.table-active,.table-active>td,.table-active>th{background-color:#f5f5f5}
+.table-success,.table-success>td,.table-success>th{background-color:#dff0d8}
+.table-info,.table-info>td,.table-info>th{background-color:#d9edf7}
+.table-warning,.table-warning>td,.table-warning>th{background-color:#fcf8e3}
+.table-danger,.table-danger>td,.table-danger>th{background-color:#f2dede}
+
+button{background:0;border:0}
+.button-row .button{float:left}
+.button{overflow:hidden;margin:10px;padding:10px;cursor:pointer;user-select:none;transition:all 60ms ease-in-out;text-align:center;white-space:nowrap;text-decoration:none;text-transform:capitalize;border:0 none;border-radius:4px;font-size:1.3em;font-weight:500;line-height:1.3;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+.button-small{padding:7px 13px;font-size:1.1em}
+.scrollToTop{color:#fafafa;font-size:1.4em;box-shadow:0 1px 1.5px 0 rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24);width:50px;height:50px;border-radius:100px;border:none;outline:0;background:#e91e63;z-index:9999;bottom:10px;right:10px;position:fixed;opacity:0;visibility:hidden}
+#marker{position:absolute;top:100px;width:0;height:0}
+a:active,a:visited,button>a{color:#2d3644;text-decoration:none;border-bottom:1px #00f dotted}
+button>a:hover{color:#5493ff;text-decoration:underline;border:none}
+
+</style>
+</head>
+<body>
+
+<section>
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div class="table-responsive">
+
+<table class="table table-striped table-hover">
+<thead><tr><th>Tab</th><th>Article</th><th>Publisher</th></tr></thead>
+<tbody>
+<tr class="active"><td>AA</td><td>Herbs in the treatment of diabetes induced erectile dysfunction</td><td>Journal of Pharmacy and Phytotheraputics</td></tr>
+<tr><td>AB</td><td>Polyphenols: Mechanisms of Action in Human Health and Disease</td><td>Academic Press</td></tr>
+<tr><td>AC</td><td>A review: Antihyperglycemic plant medicines in management of diabetes</td><td>Acupuncture and Related Therapies</td></tr>
+<tr><td>AD</td><td>An overview on antidiabetic medicinal plants having insulin mimetic property</td><td>Asian Pacific Journal of Tropical Biomedicine</td></tr>
+<tr><td>AE</td><td>Current Status of Indian Medicinal Plants with Antidiabetic Potential: A Review</td><td>Asian Pacific Journal of Tropical Biomedicine</td></tr>
+<tr><td>AF</td><td>Diabetes Mellitus: An Overview on Its Pharmacological Aspects and Reported Medicinal Plants Having Antidiabetic Activity</td><td>Asian Pacific Journal of Tropical Biomedicine</td></tr>
+<tr><td>AG</td><td>Antidiabetic effects of Momordica charantia (bitter melon) and its medicinal potency</td><td>Asian Pacific Journal of Tropical Disease</td></tr>
+<tr><td>AH</td><td>Natural medicines from plant source used for therapy of diabetes mellitus: An overview of its pharmacological aspects</td><td>Asian Pacific Journal of Tropical Disease</td></tr>
+<tr><td>AI</td><td>Antidiabetic and Hypoglycemic Effects of Syzygium cumini (Black Plum)</td><td>Bioactive Food as Dietary Interventions for Diabetes</td></tr>
+<tr><td>AJ</td><td>Animal models and natural products to investigate in vivo and in vitro antidiabetic activity</td><td>Biomedicine and Pharmacotherapy</td></tr>
+<tr><td>AK</td><td>Antidiabetic therapeutics from natural source: A systematic review</td><td>Biomedicine and Preventive Nutrition</td></tr>
+<tr><td>AL</td><td>Commonly consumed Indian plant food materials in the management of diabetes mellitus</td><td>Diabetes and Metabolic Syndrome: Clinical Research and Reviews</td></tr>
+<tr><td>AM</td><td>Effects of Momordica Charantia Fruit Juice on Islet Morphology in the Pancreas of the Streptozotocin-Diabetic Rat </td><td>Diabetes Research and Clinical Practice</td></tr>
+<tr><td>AN</td><td>Antidiabetic activity of 50% ethanolic extract of Ricinus communis and its purified fractions</td><td>Food and Chemical Toxicology</td></tr>
+<tr><td>AO</td><td>Phytochemistry, Traditional Uses and Pharmacology of Eugenia Jambolana Lam. (Black Plum): A Review</td><td>Food Research International</td></tr>
+<tr><td>AP</td><td>Antidiabetic plants used among the ethnic communities of Unakoti district of Tripura, India</td><td>Journal of Ethnopharmacology</td></tr>
+<tr><td>AQ</td><td>Leads from Indian medicinal plants with hypoglycemic potentials</td><td>Journal of Ethnopharmacology</td></tr>
+<tr><td>AR</td><td>Medicinal plants of India with anti-diabetic potential</td><td>Journal of Ethnopharmacology</td></tr>
+<tr><td>AS</td><td>Mexican plants with hypoglycaemic effect used in the treatment of diabetes</td><td>Journal of Ethnopharmacology</td></tr>
+<tr><td>AT</td><td>The use of plants in the traditional management of diabetes in Nigeria: Pharmacological and toxicological considerations</td><td>Journal of Ethnopharmacology</td></tr>
+<tr><td>AU</td><td>Natural Products with Hypoglycemic, Hypotensive, Hypocholesterolemic, Antiatherosclerotic and Antithrombotic Activities </td><td>Life Sciences</td></tr>
+<tr><td>AV</td><td>Possible Anti-Obesity Therapeutics from Nature – A Review</td><td>Phytochemistry</td></tr>
+<tr><td>AW</td><td>Functional Foods Against Metabolic Syndrome (Obesity, Diabetes, Hypertension and Dyslipidemia) and Cardiovasular Disease</td><td>Trends In Food Science and Technology</td></tr>
+<tr><td>AX</td><td>Phytochemicals and Their Impact on Adipose Tissue Inflammation and Diabetes</td><td>Vascular Pharmacology</td></tr>
+<tr><td>AY</td><td>Role of Antidiabetic Compounds on Glucose Metabolism - A Special Focus on Medicinal Plant: Salacia sps</td><td>Medical Chemistry</td></tr>
+<tr><td>AZ</td><td>In vitro and in vivo antidiabetic effect of Andrographis lineata Wall. Ex.Nees and Andrographis serphyllifolia Wt.Ic leaf extracts</td><td>African Journal of Pharmacy and Pharmacology</td></tr>
+<tr><td>BA</td><td>The search for new hypoglycemic agents from plants</td><td>African Journal of Pharmacy and Pharmacology</td></tr>
+<tr><td>BB</td><td>Phytochemistry and Mode of Action of Some Tropical Spices in the Management of Type-2 Diabetes and Hypertension</td><td>African Journal of Pharmacy and Pharmacology</td></tr>
+<tr><td>BC</td><td>A Systematic Review Of Some Potential Anti-Diabetic Herbs Used In India Characterized By Its Hypoglycemic Activity</td><td>International Journal of Pharmaceutical Sciences and Research</td></tr>
+<tr><td>BD</td><td>Antidiabetic Plants And Their Active Ingredients: A Review</td><td>International Journal of Pharmaceutical Sciences and Research</td></tr>
+<tr><td>BE</td><td>Antihyperglycemic And Antihyperlipidemic Effects Of Stephania Japonica (Thunb.) Miers. Tenril In Alloxan Induced Diabetic Mice</td><td>International Journal of Pharmaceutical Sciences and Research</td></tr>
+<tr><td>BF</td><td>Ethno Medicinal Plants With Antidiabetic Activity</td><td>International Journal of Pharmaceutical Sciences and Research</td></tr>
+<tr><td>BG</td><td>Ethno Medicinal Plants with Antidiabetic Activity: A Review</td><td>International Journal of Pharmaceutical Sciences and Research</td></tr>
+<tr><td>BH</td><td>A Quick Review on Anti-diabetic Plants and Action of Phytochemicals</td><td>International Journal of Advanced Research</td></tr>
+<tr><td>BI</td><td>Present Status Of Antidiabetic Properties Of Carica Papaya L.</td><td>International Journal of Advanced Research</td></tr>
+<tr><td>BJ</td><td>Anti-inflammatory and anti-diabetic activities with their other ethnomedicinal properties of the plants</td><td>Journal of Medicinal Plants Studies</td></tr>
+<tr><td>BK</td><td>Type 2 Diabetes and Aging: Do Dietary Phytochemicals and Antioxidants Matter?</td><td>Academia Letters</td></tr>
+<tr><td>BL</td><td>Antidiabetic Potential of Eugenia jambolana Ethanolic Seed Extract: Effect on Antihyperlipidemic and Antioxidant in Experimental Streptozotocin-Induced Diabetic Rats</td><td>Advances in Complementary and Alternative Medicine</td></tr>
+<tr><td>BM</td><td>An Overview Of Indian Novel Traditional Medicinal Plants With Antidiabetic Potentials</td><td>African Journal of Traditional, Complementary and Alternative Medicines</td></tr>
+<tr><td>BN</td><td>Evaluation of the Antioxidative, Antidiabetic and Antilipidemic Effect of Bitter Melon Seeds (Citrullus Colocynthis) Alcoholic Extract on Female Rats </td><td>Al-Azhar University</td></tr>
+<tr><td>BO</td><td>Evaluation of the Antioxidative, Antidiabetic and Antilipidemic Effect of Bitter Melon Seeds (Citrullus colocynthis) Alcoholic Extract on Female Rats</td><td>Al-Azhar University, Biochemistry Department, Faculty of Pharmacy</td></tr>
+<tr><td>BP</td><td>Alternative Therapies for Type 2 Diabetes</td><td>Alternative Medicine Review</td></tr>
+<tr><td>BQ</td><td>Fenugreek Seed Extract Stabilize Plasma Lipid Levels in Type 2 Diabetes By Modulating PPARs and GLUT4 in Insulin Target Tissues</td><td>American Journal of Phytomedicine and Clinical Therapeutics</td></tr>
+<tr><td>BR</td><td>Potential Mechanisms By Which Polyphenol-Rich Grapes Prevent Obesity-Mediated Inflammation and Metabolic Diseases</td><td>Annual Review of Nutrition</td></tr>
+<tr><td>BS</td><td>A Systematic Review Of Iranian Medicinal Plants Useful In Diabetes Mellitus</td><td>Archives of Medical Science</td></tr>
+<tr><td>BT</td><td>A Review on Ethno-pharmacology of Antidiabetic Plants</td><td>Asian Plant Research Journal</td></tr>
+<tr><td>BU</td><td>Cardioprotection By Bioactive Polyphenols: A Strategic View</td><td>Austin Journal of Cardiovascular Disease and Atherosclerosis</td></tr>
+<tr><td>BV</td><td>Phytotherapy in the Management of Diabetes and Hypertension </td><td>Bentham Science Publishers</td></tr>
+<tr><td>BW</td><td>Antidiabetic Potential of Medicinal Plants and Their Active Components</td><td>Biomolecules</td></tr>
+<tr><td>BX</td><td>Antidiabetic Potential of Medicinal Plants and Their Active Components </td><td>Biomolecules</td></tr>
+<tr><td>BY</td><td>Best herbs for managing diabetes: A review of clinical studies</td><td>Brazilian Journal of Pharmaceutical Sciences</td></tr>
+<tr><td>BZ</td><td>Plants and their active constituents from South, Central, and North America with hypoglycemic activity</td><td>Brazilian Journal of Pharmacognosy</td></tr>
+<tr><td>CA</td><td>Antioxidant Phytochemicals Against Type 2 Diabetes</td><td>British Journal of Nutrition</td></tr>
+<tr><td>CB</td><td>Molecular Mechanisms of the Cardiovascular Protective Effects of Polyphenols</td><td>British Journal of Nutrition</td></tr>
+<tr><td>CC</td><td>Mechanism of Action of Natural Products Used in the Treatment of Diabetes Mellitus</td><td>Chinese Journal of Integrative Medicine</td></tr>
+<tr><td>CD</td><td>Hypoglycemic Herbs and Their Action Mechanisms</td><td>Chinese Medicine</td></tr>
+<tr><td>CE</td><td>Hypoglycemic and Hypolipidemic Effects of Bersama Engleriana Leaves in Nicotinamide/Streptozotocin-Induced Type 2 Diabetic Rats</td><td>Complementary and Alternative Medicine</td></tr>
+<tr><td>CF</td><td>A Target Based Therapeutic Approach Towards Diabetes Mellitus Using Medicinal Plants</td><td>Current Diabetes Reviews</td></tr>
+<tr><td>CG</td><td>Identification of Novel Anti-Inflammatory Agents from Ayurvedic Medicine for Prevention of Chronic Diseases</td><td>Current Drug Targets</td></tr>
+<tr><td>CH</td><td>Updates on Managing Type 2 Diabetes Mellitus with Natural Products: Towards Antidiabetic Drug Development</td><td>Current Medicinal Chemistry</td></tr>
+<tr><td>CI</td><td>Mitochondria As Potential Targets of Flavonoids: Focus on Adipocytes and Endothelial Cells</td><td>Current Medicinal Chemistry</td></tr>
+<tr><td>CJ</td><td>Promising Potential of Dietary (Poly)Phenolic Compounds in the Prevention and Treatment of Diabetes Mellitus</td><td>Current Medicinal Chemistry</td></tr>
+<tr><td>CK</td><td>Herbal Medicines and Nutraceuticals for Diabetic Vascular Complications: Mechanisms of Action and Bioactive Phytochemicals</td><td>Current Pharmaceutical Design</td></tr>
+<tr><td>CL</td><td>Polyphenols: Potential Future Arsenals in the Treatment of Diabetes</td><td>Current Pharmaceutical Design</td></tr>
+<tr><td>CM</td><td>Switch Over to Alternative Therapy for Diabetes Mellitus - A Life Style Disease</td><td>Current Research in Diabetes and Obesity Journal</td></tr>
+<tr><td>CN</td><td>Anti-Diabetic Agents from Natural Products - An Update</td><td>Current Topics in Medicinal Chemistry</td></tr>
+<tr><td>CO</td><td>Therapeutic Potentials of Triterpenes in Diabetes and Its Associated Complications</td><td>Current Topics In Medicinal Chemistry</td></tr>
+<tr><td>CP</td><td>Systematic Review of Herbs and Dietary Supplements for Glycemic Control in Diabetes</td><td>Diabetes Care</td></tr>
+<tr><td>CQ</td><td>Saponins and their potential role in diabetes mellitus</td><td>Diabetes Management</td></tr>
+<tr><td>CR</td><td>Effects of Momordica charantia fruit juice on islet morphology in the pancreas of the streptozotocin-diabetic rat</td><td>Diabetes Research and Clinical Practice</td></tr>
+<tr><td>CS</td><td>Isolation and characterization of the leaves of Brachylaena discolor extract as an anti-diabetic agent</td><td>Durban University of Technology, Department of Biotechnology and Food Technology</td></tr>
+<tr><td>CT</td><td>Histochemistry and immunolocalisation of glucokinin in antidiabetic plants used in traditional Mexican medicine</td><td>European Journal of Histochemistry</td></tr>
+<tr><td>CU</td><td>Herbal Medicine as an Alternative Medicine for Treating Diabetes: The Global Burden</td><td>Evidence-Based Complementary and Alternative Medicine</td></tr>
+<tr><td>CV</td><td>Treating Type 2 Diabetes Mellitus with Traditional Chinese and Indian Medicinal Herbs</td><td>Evidence-Based Complementary and Alternative Medicine</td></tr>
+<tr><td>CW</td><td>Antihyperglycemic Effects and Mode of Actions of Musa Paradisiaca Leaf and Fruit Peel Hydroethanolic Extracts in Nicotinamide/Streptozotocin-Induced Diabetic Rats</td><td>Evidence-Based Complementary and Alternative Medicine</td></tr>
+<tr><td>CX</td><td>Antihyperglycemic, Antidiabetic, and Antioxidant Effects of Garcinia Pedunculata in Rats</td><td>Evidence-Based Complementary and Alternative Medicine</td></tr>
+<tr><td>CY</td><td>Beneficial Role of Bitter Melon Supplementation in Obesity and Related Complications in Metabolic Syndrome</td><td>Evidence-Based Complementary and Alternative Medicine</td></tr>
+<tr><td>CZ</td><td>Botanicals As Medicinal Food and Their Effects Against Obesity</td><td>Evidence-Based Complementary and Alternative Medicine</td></tr>
+<tr><td>DA</td><td>Rhinacanthus Nasutus Improves the Levels of Liver Carbohydrate, Protein, Glycogen, and Liver Markers in Streptozotocin-Induced Diabetic Rats</td><td>Evidence-Based Complementary and Alternative Medicine</td></tr>
+<tr><td>DB</td><td>Plants with Potential Use on Obesity and Its Complications</td><td>Excli Journal</td></tr>
+<tr><td>DC</td><td>Roles of Proanthocyanidin Rich Extracts in Obesity</td><td>Food and Function</td></tr>
+<tr><td>DD</td><td>Efficacy Of Ayurvedic - Herbal Patent Medicines In Type 2 Diabetes Mellitus As Per The Claim</td><td>Global Journal of Research on Medicinal Plants and Indigenous Medicine</td></tr>
+<tr><td>DE</td><td>Efficacy of Ayurvedic / Herbal Patent Medicines in Type 2 Diabetes Mellitus As Per the Claim</td><td>Global Journal of Research On Medicincal Plants and Indigenous Medicine</td></tr>
+<tr><td>DF</td><td>Medicinal Plants For Treatment Of Diabetes Mellitus</td><td>Indian Journal of Clinical Biochemistry</td></tr>
+<tr><td>DG</td><td>Antihyperglycemic, antihyperlipidemic and antioxidants effects of Dihar, a polyherbal ayurvedic formulation in streptozotocininduced diabetic rats</td><td>Indian Journal of Experimental Biology</td></tr>
+<tr><td>DH</td><td>Nutritive, Therapeutic and Processing Aspects of Jamun, Syzygium Cuminii (L.)Skeels - An Overview</td><td>Indian Journal of Natural Products and Resources</td></tr>
+<tr><td>DI</td><td>Diabetes mellitus and use of medicinal plants for its treatment</td><td>Indian Journal of Research in Pharmacy and Biotechnology</td></tr>
+<tr><td>DJ</td><td>An ethnobotanical survey of antidiabetic medicinal plants used by the Bodo tribe of Kokrajhar district, Assam</td><td>Indian Journal of Traditional Knowledge</td></tr>
+<tr><td>DK</td><td>Nanotechnological approaches for the development of herbal drugs in treatment of diabetes mellitus - a critical review</td><td>Institution of Engineering and Technology</td></tr>
+<tr><td>DL</td><td>Nanotechnological Approaches for the Development of Herbal Drugs in Treatment of Diabetes Mellitus – A Critical Review</td><td>Institution of Engineering and Technology</td></tr>
+<tr><td>DM</td><td>Antidiabetic Potential Of Momordica Balsamina L. Fruit Pulp And Its Extracts In Streptozotocin Induced Diabetic Wistar Rats</td><td>International Journal Of Ayurvedic And Herbal Medicine</td></tr>
+<tr><td>DN</td><td>A Review on Medication of Diabetes Mellitus and Antidiabetic Medicinal Plants</td><td>International Journal of Bioassays</td></tr>
+<tr><td>DO</td><td>Antidiabetic activity of plants, fruits and vegetables: a review</td><td>International Journal of Biological and Medical Research</td></tr>
+<tr><td>DP</td><td>Herbal Remedies For Diabetes</td><td>International Journal of Biomedical and Advance Research</td></tr>
+<tr><td>DQ</td><td>Review On Role Of Natural Αlpha-Glucosidase Inhibitors For Management Of Diabetes Mellitus</td><td>International Journal of Biomedical Research</td></tr>
+<tr><td>DR</td><td>Beneficial Effect and Mechanism of Action of Momordica Charantia in the Treatment of Diabetes Mellitus: A Mini Review</td><td>International Journal of Diabetes and Metabolism</td></tr>
+<tr><td>DS</td><td>Functional food and diabetes: A natural way in diabetes prevention?</td><td>International Journal of Food Sciences and Nutrition</td></tr>
+<tr><td>DT</td><td>Bioactive Compounds with Effects on Inflammation Markers in Humans</td><td>International Journal of Food Sciences and Nutrition</td></tr>
+<tr><td>DU</td><td>Unani Formulations for Management of Diabetes: An Overview</td><td>International Journal of Green Pharmacy</td></tr>
+<tr><td>DV</td><td>Diabetes: The next epidemic?</td><td>International Journal of Life Sciences</td></tr>
+<tr><td>DW</td><td>Diabetes: the Next Epidemic? </td><td>International Journal of Life Sciences</td></tr>
+<tr><td>DX</td><td>Dietary Polyphenols and Gene Expression in Molecular Pathways Associated with Type 2 Diabetes Mellitus: A Review</td><td>International Journal of Molecular Sciences</td></tr>
+<tr><td>DY</td><td>Molecular Mechanisms of the Anti-Obesity and Anti-Diabetic Properties of Flavonoids</td><td>International Journal of Molecular Sciences</td></tr>
+<tr><td>DZ</td><td>A Critical Review on Traditional Herbal Drugs: An Emerging Alternative Drug for Diabetes</td><td>International Journal of Organic Chemistry</td></tr>
+<tr><td>EA</td><td>A Review On Anti-Diabetic Herbs In Siddha Medicine</td><td>International Journal of Pharmaceutical Archive</td></tr>
+<tr><td>EB</td><td>Diabetes and medicinal plants - A review</td><td>International Journal of Pharmaceutical Biomed Science</td></tr>
+<tr><td>EC</td><td>Brief update on Indian herbs and spices used for diabetes in rural area of Chhattisgarh</td><td>International Journal of Pharmaceutical Chemistry and Analysis</td></tr>
+<tr><td>ED</td><td>Hypolipidaemic Activity Of The Siddha Medicinal Plants</td><td>International Journal of Pharmacognosy</td></tr>
+<tr><td>EE</td><td>Amylase Inhibitors: Potential Source of Anti-Diabetic Drug Discovery from Medicinal Plants</td><td>International Journal of Pharmacy and Life Sciences</td></tr>
+<tr><td>EF</td><td>A Novel Polyherbal Preparation For The Management Of Type-2 Diabetes Mellitus: A Clinical Study</td><td>International Journal of Pharmacy and Pharmaceutical Sciences</td></tr>
+<tr><td>EG</td><td>Anti­Hyperglycemic and Lipid Lowering Effect of Terminalia Arjuna Bark Extract on Streptozotocin Indiced Type 2 Diabetic Model Rats</td><td>International Journal of Pharmacy and Pharmaceutical Sciences</td></tr>
+<tr><td>EH</td><td>Drugs Indicated for The Management of Ziabetus Shakri (Diabetes Mellitus) in Unani Medicine - An Overview</td><td>International Journal of Pharmamedix India</td></tr>
+<tr><td>EI</td><td>Herbal Medicines for Diabetes Mellitus</td><td>International Journal of PharmTech Research</td></tr>
+<tr><td>EJ</td><td>Ethnobotanical Study of Plants Used To Treat Diabetes By Tribal People of Kolli Hills, Namakkal District,Tamilnadu, Southern India</td><td>International Journal of Pharmtech Research</td></tr>
+<tr><td>EK</td><td>Herbal Medicines for Diabetes Mellitus: A Review</td><td>International Journal of Pharmtech Research</td></tr>
+<tr><td>EL</td><td>Critical Review Of Pramehahara Dravyas In Bhavaprakash Nighantu In Management Of Diabetes Mellitus</td><td>International Journal of Research in AYUSH and Allied Systems</td></tr>
+<tr><td>EM</td><td>Antidiabetic Medicinal Plants: A Review</td><td>International Research Journal of Pharmacy</td></tr>
+<tr><td>EN</td><td>Plants with Antidiabetic Activity and Medicinal Values</td><td>International Research Journal of Pharmacy</td></tr>
+<tr><td>EO</td><td>Plants with Antidiabetic Activities and Their Medicinal Values</td><td>International Research Journal of Pharmacy</td></tr>
+<tr><td>EP</td><td>Polyphenolic Extract of Paullinia Pinnata Leaf Exhibits Antidiabetic, Anthyperlipidaemic and Antioxidant Activities in Alloxan-Induced Diabetic Rats</td><td>Investigational Medicinal Chemistry and Pharmacology</td></tr>
+<tr><td>EQ</td><td>Diabetes and Herbal Medicines</td><td>Iranian Journal of Pharmacology and Therapeutics</td></tr>
+<tr><td>ER</td><td>Potential Gains in Life Expectancy Associated with Achieving Treatment Goals in US Adults with Type 2 Diabetes</td><td>Jama Network Open</td></tr>
+<tr><td>ES</td><td>Indigenous Drugs in Ischemic Heart Disease in Patients with Diabetes</td><td>Journal of Alternative and Complementary Medicine</td></tr>
+<tr><td>ET</td><td>Antidiabetic Compounds from Medicinal Plants of Bangladesh and Their Modes of Action</td><td>Journal of Ayurvedic and Herbal Medicine</td></tr>
+<tr><td>EU</td><td>Antidiabetic Potency of Bangladeshi Medicinal Plants</td><td>Journal of Ayurvedic and Herbal Medicine</td></tr>
+<tr><td>EV</td><td>Phytochemicals in antidiabetic drug discovery</td><td>Journal of Biomedical and Therapeutic Sciences</td></tr>
+<tr><td>EW</td><td>Indian Herbs and Herbal Drugs Used for the Treatment of Diabetes</td><td>Journal of Clinical Biochemistry and Nutrition</td></tr>
+<tr><td>EX</td><td>Evaluation of Efficacy of Polyherbal Preparation in Prevention of Target Organ Damage and Intercurrent Infections In Experimentally Induced Diabetes Mellitus In Rats</td><td>Journal of Dental and Medical Sciences</td></tr>
+<tr><td>EY</td><td>Validation of Anti-Diabetic Potential of Avirai Kudineer A Siddha Herbal Formulation-A Review</td><td>Journal of Dental and Medical Sciences</td></tr>
+<tr><td>EZ</td><td>Dietary Polyphenols As Potential Nutraceuticals in Management of Diabetes: A Review</td><td>Journal of Diabetes and Metabolic Disorders</td></tr>
+<tr><td>FA</td><td>Traditional medicinal plants used for the treatment of diabetes in rural and urban areas of Dhaka, Bangladesh - an ethnobotanical survey</td><td>Journal of Ethnobiology and Ethnomedicine</td></tr>
+<tr><td>FB</td><td>Antidiabetic potential of some less commonly used plants in traditional medicinal systems of India and Nigeria</td><td>Journal of Intercultural Ethnopharmacology</td></tr>
+<tr><td>FC</td><td>Antihyperlipidemic Effect of a Polyherbal Mixture in Streptozotocin-Induced Diabetic Rats</td><td>Journal of Lipids</td></tr>
+<tr><td>FD</td><td>Contribution of indigenous anti-diabetic herbs to alternative medicine of diabetes mellitus</td><td>Journal of Medicinal and Aromatic Plant Sciences</td></tr>
+<tr><td>FE</td><td>Medicinal Plants from Jordan in the Treatment of Diabetes: Traditional Uses vs. In Vitro and In Vivo Evaluations</td><td>Journal of Medicinal Plant and Natural Product Research</td></tr>
+<tr><td>FF</td><td>Ethnopharmacological survey of medicinal plants used in the traditional treatment of diabetes mellitus in the North Western and South Western Algeria</td><td>Journal of Medicinal Plants Research</td></tr>
+<tr><td>FG</td><td>Modulation of Adipose Tissue Inflammation By Bioactive Food Compounds</td><td>Journal of Nutritional Biochemistry</td></tr>
+<tr><td>FH</td><td>A review on medicinal plants with antidiabetic activity</td><td>Journal of Pharmacognosy and Phytochemistry</td></tr>
+<tr><td>FI</td><td>Medicinal plants and diabetes mellitus: A review</td><td>Journal of Pharmacognosy and Phytochemistry</td></tr>
+<tr><td>FJ</td><td>A Comprehensive Review on Region Based Traditional Ayurvedic Practitioner's Plants Secondary Metabolites and Their Phytochemical Activities in Bangladesh</td><td>Journal of Pharmacognosy and Phytochemistry</td></tr>
+<tr><td>FK</td><td>A Pharmacological Appraisal Of Medicinal Plants With Antidiabetic Potential</td><td>Journal of Pharmacy and Bioallied Sciences</td></tr>
+<tr><td>FL</td><td>Alternative Therapies Useful in Management of Diabetes</td><td>Journal of Pharmacy and Bioallied Sciences</td></tr>
+<tr><td>FM</td><td>A Systematic Review of in Vitro Studies Conducted on Effect of Herbal Products on Secretion of Insulin from Langerhans Islets</td><td>Journal of Pharmacy and Pharmaceutical Sciences</td></tr>
+<tr><td>FN</td><td>Vitamin C may have similar beneficial effects to Gemfibrozil on serum high-density lipoprotein-cholesterol in type 2 diabetic patients</td><td>Journal of Research in Pharmacy Practice</td></tr>
+<tr><td>FO</td><td>Potential Role of Seaweed Polyphenols in Cardiovascular-Associated Disorders</td><td>Marine Drugs</td></tr>
+<tr><td>FP</td><td>Medicinal Plants with Potential Antidiabetic Activity and Their Assessment</td><td>Medicinal and Aromatic Plants</td></tr>
+<tr><td>FQ</td><td>Phytotherapy in the Management of Diabetes</td><td>Molecules</td></tr>
+<tr><td>FR</td><td>Natural Products To Counteract the Epidemic of Cardiovascular and Metabolic Disorders</td><td>Molecules</td></tr>
+<tr><td>FS</td><td>Phytotherapy in the Management of Diabetes: A Review</td><td>Molecules</td></tr>
+<tr><td>FT</td><td>Diabetes and Medicinal Plants in Portugal</td><td>Natural Products: Research Reviews</td></tr>
+<tr><td>FU</td><td>Normoglycaemic, Normolipidaemic and Antioxidant Effects of Ethanolic Extract of Acacia ataxacantha Root in Streptozotocin - induced Diabetic Rats</td><td>Notulae Scientia Biologicae</td></tr>
+<tr><td>FV</td><td>Dietary Phytochemicals: Natural Swords Combating Inflammation and Oxidation-Mediated Degenerative Diseases</td><td>Oxidative Medicine and Cellular Longevity</td></tr>
+<tr><td>FW</td><td>Antidiabetic and Antihyperlipidemic Properties of Phyllanthus emblica Linn. (Euphorbiaceae) on Streptozotocin Induced Diabetic Rats</td><td>Pakistan Journal of Nutrition</td></tr>
+<tr><td>FX</td><td>Medicinal Plants and Management of Diabetes Mellitus: A Review</td><td>Pakistan Journal of Pharmaceutical Science</td></tr>
+<tr><td>FY</td><td>Antidiabetic And Hypolipidemic Effects Of Different Fractions Of Coccinia Cordifolia L. On Normal And Streptozotocin-Induced Diabetic Rats</td><td>Pakistan Journal of Pharmaceutical Sciences</td></tr>
+<tr><td>FZ</td><td>Medicinal plants and management of Diabetes Mellitus</td><td>Pakistan Journal of Pharmaceutical Sciences</td></tr>
+<tr><td>GA</td><td>Medicinal Plants, Bioactive Compounds, and Dietary Therapies for Treating Type 1 and Type 2 Diabetes Mellitus</td><td>Pharmacognosy - Medicinal Plants</td></tr>
+<tr><td>GB</td><td>A brief review on anti diabetic plants: Global distribution, active ingredients, extraction techniques and acting mechanisms</td><td>Pharmacognosy Reviews</td></tr>
+<tr><td>GC</td><td>Herbal Medicine And Diabetes Mellitus Management</td><td>Pharmacologyonline</td></tr>
+<tr><td>GD</td><td>Antidiabetic plants and their active constituents</td><td>Phytomedicine</td></tr>
+<tr><td>GE</td><td>Effect of Dianex, A Herbal Formulation on Experimentally Induced Diabetes Mellitus</td><td>Phytotherapy Research</td></tr>
+<tr><td>GF</td><td>Medicinal plants used for the treatment of diabetes and its long-term complications</td><td>Plants in Traditional and Modern Medicine: Chemistry and Activity</td></tr>
+<tr><td>GG</td><td>Plants As Antidiabetic Agents: Traditional Knowledge To Pharmacological Validation</td><td>PSM Biological Research</td></tr>
+<tr><td>GH</td><td>Beneficial effects of cinnamon and its extracts in the management of cardiovascular diseases and diabetes</td><td>Royal Society of Chemistry</td></tr>
+<tr><td>GI</td><td>Role of Acacia Arabica Extract as an Antidiabetic, Antihyperlipidemic, and Antioxidant in Streptozotocininduced Diabetic Rats</td><td>Saudi Medical Journal</td></tr>
+<tr><td>GJ</td><td>Plants Having Potential Antidiabetic Activity</td><td>Scholars Research Library</td></tr>
+<tr><td>GK</td><td>Pharmacological and Phytochemical Appraisal of Selected Medicinal Plants from Jordan with Claimed Antidiabetic Activities</td><td>Scientia Pharmaceutica</td></tr>
+<tr><td>GL</td><td>Antidiabetic Activity of Aqueous and Ethanolic Extracts of Passiflora Foetida L. in Alloxan Induced Diabetes Rats</td><td>World Journal of Pharmaceutical Research</td></tr>
+<tr><td>GM</td><td>Diabegon, a safe and effective polyherbal therapy for type 2 diabetes mellitus</td><td>World Journal of Translational Medicine</td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</body>
+</html>
